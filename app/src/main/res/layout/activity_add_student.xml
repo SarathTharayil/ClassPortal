@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
     tools:context="com.sts.teacher.AddStudentActivity">
     <ScrollView
         android:layout_width="match_parent"
@@ -21,19 +23,23 @@
             android:layout_gravity="center_horizontal">
 
             <TextView
+                android:id="@+id/textView2"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="User Id"
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView2" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:id="@+id/editText5"
-                android:textSize="25dp"
-                android:layout_weight="1" />
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/kreon"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -42,20 +48,24 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="Name"
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView3" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:id="@+id/editText6"
-                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="text" />
+                android:fontFamily="@font/kreon"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,20 +74,24 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textView4"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="Roll No."
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView4" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:id="@+id/editText7"
-                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="number" />
+                android:fontFamily="@font/kreon"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,19 +100,23 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textView5"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="Dept."
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView5" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
+                android:id="@+id/editText8"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/editText8"
-                android:textSize="25dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:fontFamily="@font/kreon"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,20 +125,24 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textView6"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="Phone"
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView6" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:id="@+id/editText9"
-                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="number" />
+                android:fontFamily="@font/kreon"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,20 +151,24 @@
             android:layout_height="wrap_content" >
 
             <TextView
+                android:id="@+id/textView7"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/kreon"
+                android:gravity="center_vertical"
                 android:text="Email"
-                android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView7" />
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
+                android:id="@+id/editText10"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/editText10"
-                android:textSize="25dp"
                 android:layout_weight="1"
-                android:inputType="textEmailAddress" />
+                android:fontFamily="@font/kreon"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -151,20 +177,24 @@
             android:layout_height="wrap_content" >
 
             <TextView
+                android:id="@+id/textView8"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Password"
+                android:fontFamily="@font/kreon"
                 android:gravity="center_vertical"
-                android:textSize="25dp"
-                android:id="@+id/textView8" />
+                android:text="Password"
+                android:textAlignment="center"
+                android:textSize="25dp" />
 
             <EditText
+                android:id="@+id/editText11"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/editText11"
-                android:textSize="25dp"
                 android:layout_weight="1"
-                android:inputType="textPassword" />
+                android:fontFamily="@font/kreon"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -176,8 +206,10 @@
                 android:id="@+id/textView"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
+                android:fontFamily="@font/kreon"
                 android:gravity="center_vertical"
                 android:text="Subjects"
+                android:textAlignment="center"
                 android:textSize="25dp" />
 
             <ScrollView
@@ -193,42 +225,54 @@
                         android:id="@+id/checkBox1"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS01"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                     <CheckBox
                         android:id="@+id/checkBox2"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS02"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                     <CheckBox
                         android:id="@+id/checkBox3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS03"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                     <CheckBox
                         android:id="@+id/checkBox4"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS04"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                     <CheckBox
                         android:id="@+id/checkBox5"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS05"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                     <CheckBox
                         android:id="@+id/checkBox6"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:fontFamily="@font/kreon"
                         android:text="CS06"
+                        android:textAlignment="center"
                         android:textSize="25dp" />
 
                 </LinearLayout>
@@ -236,15 +280,17 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button5"
             android:layout_width="238dp"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:id="@+id/button5"
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
+            android:fontFamily="@font/kreon"
+            android:onClick="fnRegister"
+            android:text="Register"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            android:onClick="fnRegister" />
+            android:textSize="20dp" />
 
     </LinearLayout>
     </ScrollView>

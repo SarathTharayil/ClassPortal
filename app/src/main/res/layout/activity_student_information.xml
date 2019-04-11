@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="@drawable/roundbox"
     tools:context="com.sts.teacher.StudentInformationActivity"
     android:weightSum="1">
 
@@ -16,9 +16,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:fontFamily="@font/kreon"
         android:gravity="center_horizontal|center_vertical"
         android:text="Username"
-        android:textSize="40dp" />
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -30,22 +34,28 @@
         android:id="@+id/linearLayout">
 
         <TextView
+            android:id="@+id/textView15"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:text="Roll No :"
-            android:textSize="25dp"
-            android:gravity="center_vertical|right"
-            android:id="@+id/textView15"
             android:layout_marginRight="10dp"
-            android:layout_weight="0.39" />
+            android:layout_weight="0.39"
+            android:fontFamily="@font/kreon"
+            android:gravity="center_vertical|right"
+            android:text="Roll No :"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_weight="0.53"
+            android:fontFamily="@font/kreon"
             android:gravity="center_vertical|left"
             android:text="rollno"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -59,23 +69,29 @@
         android:id="@+id/linearLayout2">
 
         <TextView
+            android:id="@+id/textView16"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:text="Department:"
-            android:textSize="25dp"
-            android:gravity="center_vertical|right"
-            android:id="@+id/textView16"
             android:layout_marginRight="10dp"
-            android:layout_weight="0.39" />
+            android:layout_weight="0.39"
+            android:fontFamily="@font/kreon"
+            android:gravity="center_vertical|right"
+            android:text="Department:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
 
         <TextView
+            android:id="@+id/textView18"
             android:layout_width="120dp"
             android:layout_height="match_parent"
-            android:id="@+id/textView18"
-            android:textSize="25dp"
-            android:gravity="center_vertical|left"
             android:layout_weight="0.53"
-            android:text="CSE" />
+            android:fontFamily="@font/kreon"
+            android:gravity="center_vertical|left"
+            android:text="CSE"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -92,26 +108,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.39"
-            android:text="Notification" />
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/kreon"
+            android:text="Notification"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="12sp" />
 
         <TextView
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:text="Contact:"
-            android:textSize="25dp"
-            android:gravity="center_vertical|right"
             android:id="@+id/textView19"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:layout_weight="0.39" />
+            android:layout_weight="0.39"
+            android:fontFamily="@font/kreon"
+            android:gravity="center_vertical|right"
+            android:text="Contact:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
 
         <TextView
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
             android:id="@+id/textView20"
-            android:textSize="25dp"
-            android:gravity="center_vertical|left"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.53"
-            android:text="1234567" />
+            android:fontFamily="@font/kreon"
+            android:gravity="center_vertical|left"
+            android:text="1234567"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <ListView
@@ -120,7 +147,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundbox" />
 
 
 </RelativeLayout>
