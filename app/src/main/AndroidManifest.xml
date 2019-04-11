@@ -31,6 +31,10 @@
         <activity android:name=".AttendanceActivity" />
         <activity android:name=".StudentInformationActivity" />
         <activity android:name=".SelectRollNo"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

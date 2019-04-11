@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-      tools:context="com.sts.teacher.MainActivity">
+      tools:context="com.sts.teacher.MainActivity"
+    android:background="@color/common_google_signin_btn_text_dark_focused">
 
     <Button
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="Teacher"
         android:id="@+id/teacherButton"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFFFFF"
+        android:layout_width="318dp"
+        android:layout_height="66dp"
         android:layout_above="@+id/studentButton"
-        android:textSize="40dp"
-        android:layout_marginBottom="40dp"
         android:layout_centerHorizontal="true"
-        android:onClick="fn" />
+        android:layout_marginBottom="40dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:fontFamily="@font/kreon"
+        android:onClick="fn"
+        android:text="Teacher"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="40dp" />
 
 
     <Button
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="Student"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFFFFF"
-        android:textSize="40dp"
         android:id="@+id/studentButton"
-        android:onClick="fn"
-        android:layout_marginBottom="41dp"
+        android:layout_width="318dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:fontFamily="@font/kreon"
+        android:onClick="fn"
+        android:text="Student"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="40dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="331dp"
+        android:layout_width="326dp"
+        android:layout_height="324dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="52dp"
-        android:src="@mipmap/cusat" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        app:srcCompat="@drawable/logo" />
 
 </RelativeLayout>
