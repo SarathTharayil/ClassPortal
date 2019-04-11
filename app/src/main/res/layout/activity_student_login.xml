@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/cpgradient"
     tools:context="com.sts.teacher.StudentLogin">
     <EditText
+        android:id="@+id/editText3"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:id="@+id/editText3"
-        android:hint="Enter email address"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/roundbox"
+        android:hint="Enter ID"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
         android:hint="Enter Password"
+        android:textAlignment="center"
+        android:background="@drawable/roundbox"
         android:inputType="textPassword"
+        android:layout_below="@+id/editText3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
+        android:layout_marginTop="25dp" />
 
     <Button
+        android:id="@+id/signinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log In"
-        android:id="@+id/signinButton"
-        android:layout_marginTop="77dp"
-        android:onClick="doOnClick"
         android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundbox"
+        android:fontFamily="@font/kreon"
+        android:onClick="doOnClick"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/logo"/>
 
 </RelativeLayout>
